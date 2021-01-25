@@ -34,6 +34,13 @@
     margin: 20px;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgba(161, 161, 161, 0.884);
+}
+
 @media(max-width: 400px) {
     .image {
         margin: 0;

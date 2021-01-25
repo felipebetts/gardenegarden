@@ -8,8 +8,10 @@ function EbookDownload(props) {
         <div className={styles.main}>
             <div className={styles.fade}>
                 <div className={styles.logoContainer}>
-                    <h2 className={styles.logo}>garden<strong>&</strong>garden</h2>
-                    <h2 className={styles.logoSmall}>g&g</h2>
+                    <a href="/">
+                        <h2 className={styles.logo}>garden<strong>&</strong>garden</h2>
+                        <h2 className={styles.logoSmall}>g&g</h2>
+                    </a>
                 </div>
                 <div className={styles.contentContainer}>
                     <div className={styles.text}>

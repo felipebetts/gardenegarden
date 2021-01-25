@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
 }
 
 .title {
@@ -14,7 +14,8 @@
 }
 
 .icons {
-    margin: 30px;
+    margin: 20px;
+    margin-bottom: 0;
     /* margin-left: 100px; */
     /* margin-right: 100px; */
     /* width: 100%; */
@@ -23,5 +24,12 @@
 }
 
 .icon {
+    margin: 20px;
     text-align: center;
+}
+
+@media(max-width: 876px) {
+    .icon {
+        margin: 0;
+    }
 }

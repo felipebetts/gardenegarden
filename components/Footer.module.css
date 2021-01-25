@@ -1,0 +1,33 @@
+.cols {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.col {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(6, 17, 5, 0.767);
+    width: 250px;
+    margin: 30px;
+    margin-bottom: 10px;
+    /* background-color: greenyellow; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    margin-bottom: 20px;
+}
+
+.link:hover {
+    color: rgb(79, 204, 68);
+}
+
+.credits {
+    text-align: center;
+    color: rgba(6, 17, 5, 0.767);
+    font-weight: 500;
+}
+
