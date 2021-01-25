@@ -31,11 +31,11 @@ function CustomTextField(props) {
 
     if(props.fullWidth) {
       return (
-          <CssTextField variant="outlined" label={props.label} style={{ margin: "20px 10px"}} size="small" fullWidth />
+          <CssTextField variant="outlined" label={props.label} style={{ margin: "20px 10px"}} size="small" value={props.value} onChange={props.onChange} fullWidth />
       )
     } else {
       return (
-        <CssTextField variant="outlined" label={props.label} style={{ margin: "20px 10px"}} size="small" />
+        <CssTextField variant="outlined" label={props.label} style={{ margin: "20px 10px"}} size="small" value={props.value} onChange={props.onChange} />
     )
     }
 }

@@ -13,7 +13,7 @@ const ColorButton = withStyles(() => ({
 
 function CustomButton(props) {
     return (
-        <ColorButton size="large" variant="contained">{props.children}</ColorButton>
+        <ColorButton size="large" variant="contained" onClick={props.onClick}>{props.children}</ColorButton>
     )
 }
 

@@ -10,7 +10,9 @@ function LastCall(props) {
             <p className={styles.text}>
                 <strong>Os 4 passos para a colheita certa</strong>
             </p>
-            <Button variant="contained">Baixe o eBook</Button>
+            <a href="#top">
+                <Button variant="contained">Baixe o eBook</Button>
+            </a>
         </div>
     )
 }

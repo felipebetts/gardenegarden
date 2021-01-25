@@ -2,8 +2,23 @@ import styles from './EbookDownload.module.css'
 import CustomTextField from '../input/CustomTextField'
 
 import CustomButton from '../input/CustomButton'
+import { useState } from 'react'
 
 function EbookDownload(props) {
+
+    const initialForm = {
+        nome: '',
+        sobrenome: '',
+        email: '',
+        celular: ''
+    }
+
+    const [form, setForm] = useState(initialForm)
+
+    const handleClick = () => {
+        setForm(initialForm)
+    }
+
     return (
         <div className={styles.main}>
             <div className={styles.fade}>
@@ -35,17 +50,17 @@ function EbookDownload(props) {
                             </div>
                             <div className={styles.formContent}>
                                 <div className={styles.formRow}>
-                                    <CustomTextField label="Nome" />
-                                    <CustomTextField label="Sobrenome" />
+                                    <CustomTextField value={form.nome} onChange={e => setForm({ ...form, nome: e.target.value})} label="Nome" />
+                                    <CustomTextField value={form.sobrenome} onChange={e => setForm({ ...form, sobrenome: e.target.value})} label="Sobrenome" />
                                 </div>
                                 <div className={styles.formRow}>
-                                    <CustomTextField label="Email" fullWidth/>
+                                    <CustomTextField value={form.email} onChange={e => setForm({ ...form, email: e.target.value})} label="Email" fullWidth/>
                                 </div>
                                 <div className={styles.formRow}>
-                                    <CustomTextField label="Celular" fullWidth/>
+                                    <CustomTextField value={form.celular} onChange={e => setForm({ ...form, celular: e.target.value})} label="Celular" fullWidth/>
                                 </div>
                                 <div className={styles.formRow}>
-                                    <CustomButton variant="outlined">Download</CustomButton>
+                                    <CustomButton variant="outlined" onClick={() => handleClick()}>Download</CustomButton>
                                 </div>
                             </div>
                         </div>

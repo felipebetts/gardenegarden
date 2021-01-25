@@ -16,7 +16,9 @@ function Second(props) {
             <p className={styles.text}>
                 Descubra os 4 passos que irão aumentar drasticamente o rendimento das colheitas. Baixe este guia prático para melhorar a saúde do seu jardim.
             </p>
-            <CustomButton>Baixe já</CustomButton>
+            <a href="#top">
+                <CustomButton>Baixe já</CustomButton>
+            </a>
         </div>
     )
 }
