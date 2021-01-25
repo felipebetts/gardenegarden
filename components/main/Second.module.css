@@ -13,6 +13,7 @@
 .title {
     font-size: 40px;
     font-weight: 400;
+    text-align: center;
     /* padding-top: 40px; */
 }
 
@@ -21,8 +22,22 @@
     text-align: center;
 }
 
+.images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .image {
     height: 200px;
     width: 350px;
     margin: 20px;
+}
+
+@media(max-width: 400px) {
+    .image {
+        margin: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
 }

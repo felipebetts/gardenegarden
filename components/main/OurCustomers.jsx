@@ -8,7 +8,7 @@ function OurCustomers(props) {
                 Nossos clientes
             </h2>
             <p className={styles.text}>
-                <strong>Parceiros que confiaram em nós</strong>
+                <strong>Parceiros que confiam em nós</strong>
             </p>
         </div>
     )

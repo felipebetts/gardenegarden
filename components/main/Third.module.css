@@ -15,9 +15,9 @@
 
 .icons {
     margin: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    width: 100%;
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+    /* width: 100%; */
     display: flex;
     justify-content: space-around;
 }
