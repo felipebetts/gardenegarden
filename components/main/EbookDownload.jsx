@@ -1,7 +1,9 @@
 import styles from './EbookDownload.module.css'
 import CustomTextField from '../input/CustomTextField'
-
 import CustomButton from '../input/CustomButton'
+
+import Snackbar from '@material-ui/core/Snackbar'
+import Alert from '@material-ui/lab/Alert';
 import { useState } from 'react'
 
 function EbookDownload(props) {
@@ -14,10 +16,20 @@ function EbookDownload(props) {
     }
 
     const [form, setForm] = useState(initialForm)
+    const [open, setOpen] = useState(false)
 
     const handleClick = () => {
         setForm(initialForm)
+        setOpen(true)
     }
+
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+          return;
+        }
+    
+        setOpen(false);
+    };
 
     return (
         <div className={styles.main}>
@@ -31,7 +43,7 @@ function EbookDownload(props) {
                 <div className={styles.contentContainer}>
                     <div className={styles.text}>
                         <div className={styles.title}>
-                            <h1>O seu guia de jardinagem urbana.</h1>
+                            <h1>O seu guia de jardinagem urbana</h1>
                         </div>
                         <div className={styles.description}>
                             <p>Descubra como você pode: </p>
@@ -61,6 +73,11 @@ function EbookDownload(props) {
                                 </div>
                                 <div className={styles.formRow}>
                                     <CustomButton variant="outlined" onClick={() => handleClick()}>Download</CustomButton>
+                                    <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                                        <Alert onClose={handleClose} severity="success">
+                                            Nesse momento será feito o download
+                                        </Alert>
+                                    </Snackbar>
                                 </div>
                             </div>
                         </div>
