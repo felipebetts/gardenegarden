@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(6, 17, 5, 0.767);
+
+    margin: 40px;
+    padding-top: 20px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 400;
+    /* padding-top: 40px; */
+}
+
+.text {
+    font-size: 20px;
+    text-align: center;
+}
+
+.image {
+    height: 200px;
+    width: 350px;
+    margin: 20px;
+}
