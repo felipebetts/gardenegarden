@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import EbookDownload from '../components/main/EbookDownload'
 import Second from '../components/main/Second'
 import Third from '../components/main/Third'
@@ -8,7 +10,11 @@ import Footer from '../components/Footer'
 
 function App(props) {
     return (
-        <div>
+        <>
+            <Head>
+                <title>Garden&Garden | Ebook</title>
+                <meta property="og:title" content="Ebook de Jardinagem GRÁTIS!" key="title" />
+            </Head>
             <EbookDownload/>
             <Second />
             <Third />
@@ -16,7 +22,7 @@ function App(props) {
             <OurCustomers />
             <LastCall />
             <Footer />
-        </div>
+        </>
     )
 }
 
