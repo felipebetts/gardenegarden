@@ -24,7 +24,7 @@ function Footer(props) {
                 </div>
             </div>
             <div className={styles.credits}>
-                <p>Desenvolvido por <a href="https://github.com/felipebetts" target="_blank" className={styles.link}>Felipe Betts</a></p>
+                <p>Desenvolvido por <a href="https://github.com/felipebetts" target="_blank" rel="noreferrer" className={styles.link}>Felipe Betts</a></p>
             </div>
         </div>
     )
